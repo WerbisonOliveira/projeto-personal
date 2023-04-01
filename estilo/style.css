@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'smile';
+    src: url('../fonte/Always\ Smile.otf') format('OpenType');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+:root {
+    --fonte-padrão:'Dancing Script', cursive;
+    --fonte-destaque:'smile', cursive;
+}
+
+header {
+    padding: 20px;
+    background-color:#EDC1C9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > a {
+    font-family: var(--fonte-padrão);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+}
+
+.seçao1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #EDC1C9;
+}
+
+.seçao1 > h1 {
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    text-align: center;
+    font-size: 6.5rem;
+    padding: 80px 0px 0px 15px;
+}
+
+.seçao1 > img {
+    padding: 30px 0px 10px 0px;
+    display: inline-block;
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
+}
+
+.seçao2 {
+    background-color: #df9da9;
+    padding: 0px 10px 80px 10px;
+}
+
+.seçao2 > h1 {
+    font-family: var(--fonte-padrão);
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+    font-size: 3rem;
+    color: black;
+}
+
+.seçao2 > table {
+    box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.466);
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-collapse: collapse;
+    font-family: var(--fonte-padrão);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+caption {
+    padding: 10px;
+    box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.466);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.linha2 {
+    border-top: 1px solid black;
+}
+
+.linha2 > .dado3 {
+    border-right: 1px solid black;
+}
+
+.linha1 > .dado1 {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.linha1 > .dado2 {
+    border-top: 1px solid black;
+}
+
+tr > td {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    color: black;
+}
+
+.seçao3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: #EDC1C9;
+    padding-bottom: 30px;
+}
+
+.seçao3 > h1 {
+    font-family: var(--fonte-padrão);
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+}
+
+.seçao3 > p {
+    font-family: var(--fonte-padrão);
+    font-size: 2rem;
+}
+
+.seçao3 > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    font-family: var(--fonte-padrão);
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.seçao3 > a:hover {
+    background-color: rgb(201, 201, 201);
+    transition-duration: 0.5s;
+}
+
+.seçao3 > a > img {
+    width: 30px;
+}
+
+footer > p {
+    font-family: var(--fonte-padrão);
+    font-size: 1.1rem;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+p > a {
+    text-decoration: none;
+    color: white;
+}
